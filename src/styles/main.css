@@ -1,4 +1,4 @@
-.container {
+main {
     display: flex;
     flex-direction: column;
     height: 100vh;
@@ -9,7 +9,6 @@
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-
     height: 90px;
     width: 100%;
     background-color: rgb(0, 0, 0);
@@ -45,4 +44,12 @@
 .menu-time h2:nth-child(2),
 .menu-score h2:nth-child(2) {
     margin-top: 1rem;
+}
+
+#h2-time {
+    color: rgb(255, 0, 0);
+}
+
+#h2-score {
+    color: rgb(255, 0, 0);
 }
