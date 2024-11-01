@@ -20,7 +20,7 @@ Este projeto cria um jogo interativo inspirado no personagem Detona Ralph, onde 
 ## Tecnologias Utilizadas
 - **HTML5:** Estruturação da página.  
 - **CSS3:** Estilização e layout, utilizando técnicas de design responsivo e efeitos visuais.
-- **JavaScript:** Lógica do jogo, envolvendo um temporizador, posicionamento aleatório de Ralph e sistema de pontuação.
+- **JavaScript:** Lógica do jogo, envolvendo um temporizador, posicionamento aleatório de Ralph, sistema de pontuação e de vidas conforme o jogador erra o alvo.
 
 ## Estrutura do Projeto
 O projeto é composto pelos seguintes componentes principais:
@@ -29,4 +29,4 @@ O projeto é composto pelos seguintes componentes principais:
 
 - **Estilo Visual:** A interface é estilizada para imitar o visual de um arcade retrô, com fundo de parede e elementos gráficos personalizados, como o avatar do personagem e os quadrados de jogo com cores e bordas destacadas.
 
-- **Lógica do Jogo:** O script gerencia a mudança do alvo na tela, aumenta a pontuação ao clicar no alvo correto e finaliza o jogo quando o tempo acaba, exibindo a pontuação total do jogador. Há também efeitos sonoros que aumentam a imersão​.
+- **Lógica do Jogo:** O script gerencia a mudança do alvo na tela, aumenta a pontuação ao clicar no alvo correto e finaliza o jogo quando o tempo acaba ou acumula-se 3 erros, exibindo a pontuação total do jogador. Há também efeitos sonoros de acerto, erro e Gamer Over que aumentam a imersão​.
