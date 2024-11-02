@@ -37,18 +37,15 @@ function randomSquare(){
     state.values.hitPosition = randomSquare.id;
 }
 
-function checkGameOver(){
-    if (state.values.currentTime <= 0 || state.values.lives <= 0){
+function checkGameOver() {
+    if (state.values.currentTime <= 0 || state.values.lives <= 0) {
         playSound("over");
-        resetGame();
-        updateLivesDisplay();
-        clearInterval(state.actions.countDownTimerId);
-        clearInterval(state.actions.timerId);
-        clearInterval(state.actions.lives);
-      
         setTimeout(() => {
             alert("Game Over! O seu resultado foi: " + state.values.result);
-            state.view.score.textContent = state.values.result;
+            clearInterval(state.actions.countDownTimerId);
+            clearInterval(state.actions.timerId);
+            clearInterval(state.actions.lives);
+            state.view.score.textContent = 0;
             state.view.timeLeft.textContent = state.values.currentTime;
             state.actions.isGameActive = true;
             resetGame();
@@ -77,6 +74,7 @@ function countDown(){
     state.values.currentTime--;
     state.view.timeLeft.textContent = state.values.currentTime;
     checkGameOver();
+    finalGame();
 }
 
 function addListenerHitBox(){
@@ -93,6 +91,7 @@ function addListenerHitBox(){
                 playSound("error");
                 updateLivesDisplay();
                 checkGameOver();
+                finalGame();
             }
         })
     });
