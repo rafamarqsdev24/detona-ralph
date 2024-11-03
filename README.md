@@ -1,5 +1,5 @@
 # Detona Ralph 
-Projeto de desenvolvimento do jogo Detona Ralph. Este projeto foi criado com HTML, CSS e JavaScript, seguindo boas práticas de estruturaçã, estilização e codificação de páginas web.
+Projeto de desenvolvimento do jogo Detona Ralph. Este projeto foi criado com HTML, CSS e JavaScript, seguindo boas práticas de estruturação, estilização e codificação de páginas web.
 
 ## Índice
 1. [Sobre o Autor](#sobre-o-autor)
